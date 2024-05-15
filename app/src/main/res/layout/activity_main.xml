@@ -122,16 +122,22 @@
         android:id="@+id/exportTilesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:text="@string/export_tiles_text"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/importTilesButton"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/importTilesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import Tiles"
+        app:layout_constraintTop_toBottomOf="@id/exportTilesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
     <ImageButton
         android:id="@+id/current_location"
         android:layout_width="wrap_content"
